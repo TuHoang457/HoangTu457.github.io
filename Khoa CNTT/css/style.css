@@ -1,0 +1,230 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fff7ef; 
+  color: #222;
+  line-height: 1.6;
+}
+
+
+#header {
+  background-color: #ff8000; 
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Logo, .logo {
+  border-radius: 50%;
+}
+
+.TieuDe, .title {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+#menu {
+  margin-top: 8px;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ff9933; 
+  justify-content: center;
+}
+
+.menu-list li {
+  position: relative;
+}
+
+.menu-list li a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  font-weight: 500;
+}
+
+.menu-list li a:hover {
+  background-color: #ff6600;
+}
+
+
+.menucon {
+  display: none;
+  position: absolute;
+  background-color: #ff9933;
+  list-style: none;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+}
+
+.menucon li a {
+  padding: 10px;
+}
+
+.menu-list li:hover .menucon {
+  display: block;
+}
+
+#main {
+  max-width: 1000px;
+  margin: 25px auto;
+  background-color: white;
+  padding: 25px;
+  border: 1px solid #ffd9b3;
+  border-radius: 8px;
+}
+
+
+.tieudetrang, .page-title {
+  color: #ff6600;
+  margin-bottom: 15px;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #e65c00;
+  margin-bottom: 6px;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.noidung-list, .chuyennganh-list {
+  margin-left: 25px;
+  list-style: square;
+}
+
+table, .giangvien-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ffcc99;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffe0b3;
+  color: #b34700;
+}
+
+article {
+  margin-bottom: 20px;
+  border: 1px solid #ffd9b3;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #fff3e0;
+}
+
+.imgmoi, .news-img {
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.tieudemoi, .news-title {
+  color: #e65c00;
+}
+
+.new-desc {
+  margin: 8px 0;
+}
+
+.nutbam, .them, .btn-link {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+form {
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ffd9b3;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 600;
+  color: #b34700;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ffcc99;
+  border-radius: 5px;
+}
+
+input[type="submit"], input[type="reset"] {
+  width: auto;
+  background-color: #ff8000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #ff6600;
+}
+
+#footer {
+  background-color: #ff8000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-list {
+    flex-direction: column;
+  }
+
+  #main {
+    padding: 15px;
+  }
+}
